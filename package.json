@@ -18,7 +18,8 @@
     "prepare": "tsdx build"
   },
   "dependencies": {
-    "@emotion/core": "^10.0.28"
+    "@bem-react/classname": "^1.5.8",
+    "@bem-react/core": "^2.0.10"
   },
   "devDependencies": {
     "@types/react": "^16.9.35",
@@ -26,6 +27,7 @@
     "husky": "^4.2.5",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "sass": "^1.26.5",
     "tsdx": "^0.13.2",
     "tslib": "^2.0.0",
     "typescript": "^3.9.2"
