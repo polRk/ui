@@ -1,0 +1,59 @@
+.Button
+  align-items: center
+  border: none
+  border-radius: 4px
+  cursor: pointer
+  display: inline-flex
+  font-size: inherit
+  justify-content: center
+  height: 32px
+  max-width: 100%
+  padding: 0 8px
+  position: relative
+  text-decoration: none
+  color: hsl(235, 10%, 20%)
+  transition: background 0.1s ease-out 0s, box-shadow 0.15s cubic-bezier(0.47, 0.03, 0.49, 1.38) 0s
+
+  &-Content
+    margin: 0 4px
+    max-width: 100%
+    opacity: 1
+    line-height: 32px
+
+  &-ElementBefore, &-ElementAfter
+    align-items: center
+    display: flex
+    margin: 0 4px
+    opacity: 1
+    user-select: none
+
+  &-Loader
+    opacity: 0
+    display: none
+    position: absolute
+
+  &-Content, &-ElementBefore, &-ElementAfter, &-Loader
+    transition: opacity 0.3s ease 0s
+
+  &_loading
+    pointer-events: none
+
+  &_loading &-Loader
+    display: flex
+    opacity: 1
+
+  &_loading &-Content,
+  &_loading &-ElementBefore,
+  &_loading &-ElementAfter
+    opacity: 0
+
+  &_variant_default
+    background: hsl(240, 45%, 90%)
+
+  &_variant_primary
+    color: #fffffe
+    background: hsl(250, 80%, 60%)
+
+  &_variant_danger
+    color: #fffffe
+    background: hsl(0, 70%, 60%)

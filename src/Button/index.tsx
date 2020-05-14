@@ -1,10 +1,6 @@
-/** @jsx jsx */
+import { cn } from '@bem-react/classname'
+import { Button } from './Button'
 import { ButtonProps } from './types'
-import { FC } from 'react'
-import { jsx } from '@emotion/core'
 
-const Button: FC<ButtonProps> = ({ children }) => {
-  return <button>{children}</button>
-}
-
-export { Button, ButtonProps }
+const cnButton = cn('Button')
+export { cnButton, Button, ButtonProps }
